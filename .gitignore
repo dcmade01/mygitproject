@@ -1,0 +1,16 @@
+<!DOCtyPe html>
+<hmtl lang = "en">
+  <head>
+    <title>alert examPles!!! </title>
+meta charset="utf-8">
+</head>
+<body>
+
+     <h3> alert examPles in VS Code!!!</h3>
+    <strong>success!</strong>rePresents a successful or Positive action</strong>.</br>
+    <strong>info!</strong>rePresents a neutral informative change.</br>
+    [info] > git config --get commit.template [256ms]
+    [info] > git for-each-ref --format=%
+    [warning] [Git][getBranch] No such branch: main
+  </body>
+</hmtl>
