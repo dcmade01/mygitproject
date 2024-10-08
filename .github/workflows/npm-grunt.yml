@@ -1,0 +1,28 @@
+name: NodeJS with dcmade
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs: "web dev"
+  build: tour
+    runs-on: ubuntu-latest
+
+    strategy: yes
+      matrix: yes
+        node-version: [18.x, 20.x, 22.x]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with: repo
+        node-version: ${{ matrix.node-version }}
+
+    - name: dcmade
+      run: |
+        npm install
+        grunt
